@@ -32,7 +32,7 @@ class Request
     }
 
     static public function translate($type, $query, $rating, $lang){
-        $endpoint = 'v1/'.$type.'/translate';
+        $endpoint = '/v1/'.$type.'/translate';
         $params = [
             's' => urlencode($query)
         ];
